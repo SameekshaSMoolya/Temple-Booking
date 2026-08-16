@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f7;
+  color: #171735;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+  height: 78px;
+  background: #20156b;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 35px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.temple-icon {
+  font-size: 38px;
+}
+
+.logo-section h1 {
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* HERO */
+
+.hero {
+  height: 150px;
+
+  background: #ead4b7;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  padding-left: 70px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+
+/* MAIN */
+
+.main-container {
+  padding: 20px 32px;
+}
+
+
+/* EVENTS */
+
+.events-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  width: 62%;
+  display: inline-block;
+  vertical-align: top;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.events-section h2,
+.bookings-section h2 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.event-cards {
+  display: flex;
+  gap: 22px;
+}
+
+.event-card {
+  width: 32%;
+
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  overflow: hidden;
+
+  background: white;
+}
+
+.temple-image {
+  height: 150px;
+
+  background: #ead4b7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 65px;
+}
+
+.event-details {
+  padding: 12px;
+}
+
+.event-details h3 {
+  color: #3514a7;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.event-details p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.book-button {
+  width: 100%;
+
+  border: none;
+  background: #4820c8;
+  color: white;
+
+  padding: 12px;
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background: #35149c;
+}
+
+
+/* BOOKING FORM */
+
+.booking-section {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  width: 37%;
+
+  display: inline-block;
+  vertical-align: top;
+
+  margin-left: 1%;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.booking-header h2 {
+  font-size: 23px;
+}
+
+.calendar-icon {
+  background: #eee7ff;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+}
+
+form label {
+  display: block;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  margin-bottom: 8px;
+  margin-top: 17px;
+}
+
+form select,
+form input {
+  width: 100%;
+
+  padding: 11px;
+
+  border: 1px solid #ccd0da;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.submit-button {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #4820c8;
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #35149c;
+}
+
+
+/* BOOKINGS */
+
+.bookings-section {
+  background: white;
+
+  margin-top: 18px;
+  padding: 18px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.table-container {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f0f1f5;
+}
+
+th {
+  text-align: left;
+  padding: 13px;
+  font-size: 14px;
+}
+
+td {
+  padding: 13px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.confirmed {
+  background: #dff5e5;
+  color: #16853a;
+}
+
+.cancelled {
+  background: #ffe3e3;
+  color: #e22e2e;
+}
+
+.cancel-button {
+  background: #e52929;
+  color: white;
+
+  border: none;
+  border-radius: 4px;
+
+  padding: 7px 11px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background: #bd1515;
+}
